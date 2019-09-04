@@ -30,6 +30,7 @@ function startApp() {
 
   app.get('/', require('./routes/home'));
   app.get('/search', require('./routes/search'));
+  app.get('/:category/search', require('./routes/search'));
 
   app.listen(config.appPort, () => {
     console.log(`Equitable Preprints UI listening on port ${config.appPort}`);

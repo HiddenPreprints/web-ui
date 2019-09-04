@@ -1,0 +1,63 @@
+.tm-wrapper {padding: 20px 0;}
+
+.tm-wrapper.bg-gradient {background: linear-gradient(#ddd,#eee,#fff,#fff); margin: 0}
+.tm-wrapper.bg-gradient .jumbotron {background: none; padding: 0; margin: 0;}
+
+ul.stats {padding: 0; margin: 0; list-style: none; font-family: monospace;}
+ul.stats li {line-height: 26px; padding: 0 0 2px; margin: 0; list-style: none}
+ul.stats .count {width: 80px; margin-right: 10px; text-align: right; font-size: 15px; font-weight: bold; display: inline-block}
+
+.navbar {margin-bottom: 0}
+.navbar .separator {height: 50px; margin: 0 10px; border-right: 1px solid #3c3c3c; border-left: 1px solid #272727;}
+
+body {padding-top: 50px;}
+
+@media (max-width: 767px) {
+  body {padding-top: 0}
+  .navbar {position: relative}
+  .navbar-brand {float: none}
+  .navbar .separator {display: none}
+}
+
+
+.tm-statistic {
+  text-align: left; background: #f5f5f5; padding: 0 30px; margin: 20px 0;
+  border: 2px solid transparent; border-radius: 3px;
+}
+
+.tm-statistic.success {border-color: #8fd68f;background: #d2fcd2}
+.tm-statistic.warning {border-color: #efdc2c;background: #faf3d7}
+.tm-statistic.primary {border-color: #639fd0;background: #b1dcff}
+.tm-statistic.danger {border-color: #db6161;background: #ef8181}
+
+
+.tm-statistic .heading {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7);
+  margin: 0 -30px 10px;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: 500
+}
+
+.tm-statistic .score { text-align: center; font-size: 30px; font-weight: 400}
+.tm-statistic .avg { text-align: center; font-size: 12px; font-weight: 400; }
+
+.tm-statistic .breakdown {
+  height: 150px;
+}
+
+.tm-context-selector {width: 200px; overflow: visible;}
+/* .tm-context-selector {background: linear-gradient(#444,#333,#333,#222,#222,#222,#000)} */
+.tm-context-selector {background: rgba(200,200,200,0.1)}
+
+/* .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {width: 320px} */
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {color: #9d9d9d}
+
+.navbar-brand .navbar-icon {width: 48px; float: left; margin-right: 8px; margin-top: -13px}
+
+.sorting-asc {color: #3B5}
+.sorting-desc {color: #B54}
+
+.form-horizontal .control-label {text-align: left}

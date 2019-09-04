@@ -1,7 +1,12 @@
-<html>
-<form method="GET" action="/search">
-  <label for="homeSearchInput">Search term</label>
-  <input id="homeSearchInput" name="query" type="text" value="" placeholder="e.g. brain" />
-</form>
+{{> header}}
 
-</html>
+<h1>Equitable Preprints</h1>
+
+
+<h3>Categories:</h3>
+{{#each categories}}
+  <h3><a href="/{{this}}/search">{{this}}</h3>
+{{/each}}
+<h3><a href="/search">(all)</h3>
+
+{{> footer}}

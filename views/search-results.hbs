@@ -1,10 +1,47 @@
-<html>
-<p>Found {{resultsTotal}} results for {{query}}.</p>
+{{> header}}
+
+<h1>Equitable Preprints: {{category}}</h1>
+
+<form method="GET" action="">
+  <label for="homeSearchInput">Search term</label>
+  <input id="homeSearchInput" name="query" type="text" value="{{query}}" placeholder="e.g. brain" />
+</form>
+
+
+
+
+<h2>Results</h2>
+
+<p>
+  <strong>Found {{resultsTotal}} results
+    {{#if query}} for term "{{query}}"{{/if}}
+    {{#if category}} in {{category}}{{/if}}.
+  </strong>
+</p>
 
 {{#each results}}
 <div class="result-item">
-  <p>{{this.title}}</p>
+  <h3>
+    <span class="badge" title="Visibility Index">VI: 0.03</span>
+    <a href="{{this.url}}" target="_blank">{{this.title}}</a>
+  </h3>
+  <blockquote>{{this.abstract}}</blockquote>
+  <p>
+    <strong>Authors:</strong>
+    {{this.author_vector}}
+  </p>
+  <p>
+    <a href="/{{this.collection}}/search">
+      <span class="label label-primary">{{this.collection}}</span>
+    </a>
+    &nbsp; &nbsp; &nbsp; &nbsp;
+    &nbsp; &nbsp; &nbsp; &nbsp;
+    Published: {{this.posted}}
+    &nbsp; &nbsp; &nbsp; &nbsp;
+    DOI: <a href="https://doi.org/{{this.doi}}">https://doi.org/{{this.doi}}</a>
+  </p>
 </div>
+<hr />
 {{/each}}
 
-</html>
+{{> footer}}
