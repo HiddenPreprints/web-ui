@@ -1,0 +1,29 @@
+{
+  "name": "ep-ui",
+  "version": "1.0.0",
+  "description": "Equitable Preprints UI",
+  "homepage": "https://gitlab.com/equitable-preprints",
+  "bugs": {
+    "url": "https://gitlab.com/equitable-preprints/ep-ui/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/equitable-preprints/ep-ui.git"
+  },
+  "main": "main.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.1.0",
+    "eslint": "^6.3.0",
+    "express": "^4.17.1",
+    "hbs": "^4.0.4",
+    "lodash": "^4.17.15",
+    "request": "^2.88.0"
+  }
+}
