@@ -12,12 +12,14 @@
 
 </form>
 
+{{#if category}}
 <p>
   <strong>Displaying 20 results out of {{resultsTotal}}
     {{#if query}} for term "{{query}}"{{/if}}
-    {{#if category}} in {{category}}{{/if}}.
+     in {{category}}.
   </strong>
 </p>
+{{/if}}
 
 {{#each results}}
 <div class="result-item">

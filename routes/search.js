@@ -23,6 +23,12 @@ module.exports = (req, res, next) => {
         return cat;
       });
 
+      if (!category) {
+        results = {
+          total: 0,
+          articles: []
+        };
+      }
 
       // if (category) {
       //   console.log('applying category', category);
