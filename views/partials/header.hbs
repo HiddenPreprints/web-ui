@@ -17,3 +17,35 @@
 
 <body>
   <div class="container">
+
+    <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li>
+            <span class="navbar-brand">
+              Equitable Preprints
+            </span>
+          </li>
+
+          <li class="separator"></li>
+
+          <li><a href="/">Home</a></li>
+
+          <li class="separator"></li>
+
+            <li class="ep-context-selector">
+              <a type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Select a category <span class="caret"></span>
+              </a>
+
+              <ul class="dropdown-menu">
+                {{#each categories}}
+                  <li><a href="/{{this}}/search">{{this}}</a></li>
+                {{/each}}
+                <li><a href="/search">(all)</a></li>
+              </ul>
+            </li>
+        </ul>
+
+      </div>
+    </nav>

@@ -2,13 +2,15 @@
 
 <h1>Equitable Preprints: {{category}}</h1>
 
-<form method="GET" action="">
-  <label for="homeSearchInput">Search term</label>
-  <input id="homeSearchInput" name="query" type="text" value="{{query}}" placeholder="e.g. brain" />
+<form method="GET" action="" class="form-inline">
+  <div class="form-group">
+    <label for="homeSearchInput">Search term</label>
+    <input id="homeSearchInput"  class="form-control" name="query" type="text" value="{{query}}" placeholder="e.g. brain" />
+  </div>
+
+  <button type="submit" class="btn btn-default">Search</button>
+
 </form>
-
-
-
 
 <h2>Results</h2>
 
