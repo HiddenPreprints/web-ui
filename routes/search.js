@@ -36,6 +36,7 @@ module.exports = (req, res, next) => {
 
       const context = {
         resultsTotal: results && results.total ? results.total : 0,
+        resultsDisplayed: results && results.articles ? results.articles.length : 0,
         query: query,
         category: category,
         results: results && results.articles ? results.articles : [],
