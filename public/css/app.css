@@ -43,3 +43,5 @@ div#mainBody { margin-left: 200px; max-width: 980px }
 @media (max-width: 400px) {
   div#navLeft {display: none}
 }
+
+#logo {width: 140px; margin: 10px 30px;}
