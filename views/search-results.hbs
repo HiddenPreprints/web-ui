@@ -23,7 +23,7 @@
 
 {{#each results}}
 <div class="result-item">
-  <span class="category">{{this.collection}}</span>
+  <span class="category">{{this.category}}</span>
 
   <h3>
     <a href="{{this.url}}" target="_blank">{{this.title}}</a>
@@ -33,8 +33,7 @@
 
   <!-- <blockquote>{{this.abstract}}</blockquote> -->
   <p>
-    <strong>Authors:</strong>
-    {{this.author_vector}}
+    {{this.authors}}
   </p>
   <!-- <p>
     &nbsp; &nbsp; &nbsp; &nbsp;
