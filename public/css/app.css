@@ -3,9 +3,6 @@
 .wrapper.bg-gradient {background: linear-gradient(#ddd,#eee,#fff,#fff); margin: 0}
 .wrapper.bg-gradient .jumbotron {background: none; padding: 0; margin: 0;}
 
-.navbar {margin-bottom: 0}
-.navbar .separator {height: 50px; margin: 0 10px; border-right: 1px solid #3c3c3c; border-left: 1px solid #272727;}
-
 body {padding-top: 50px;}
 
 @media (max-width: 767px) {
@@ -15,10 +12,7 @@ body {padding-top: 50px;}
   .navbar .separator {display: none}
 }
 
-.navbar-inverse .navbar-brand, .navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {color: #9d9d9d}
-
 .form-horizontal .control-label {text-align: left}
-
 
 nav#navLeft { position: fixed; left:0; top:0; width:200px; height:100% }
 
@@ -31,7 +25,6 @@ nav#navLeft li a:hover { color: #337ab7 }
 nav#navLeft li a.active { background: #eee; color: #555; text-decoration: none}
 
 div#mainBody { margin-left: 200px; max-width: 980px }
-
 
 #searchForm {margin-bottom: 30px}
 

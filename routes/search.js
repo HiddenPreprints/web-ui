@@ -1,14 +1,16 @@
 const _ = require('lodash');
 
-const postgres = require('../lib/postgres');
+const api = require('../lib/api');
 
 module.exports = (req, res, next) => {
   const category = _.get(req, 'params.category');
   const query = _.get(req, 'query.query');
 
-  return postgres.getFakeCategories((categoriesErr, categoriesData) => {
+  // return api.getCategories((categoriesErr, categoriesData) => {
+  return api.getFakeCategories((categoriesErr, categoriesData) => {
 
-    return postgres.getFakeResults((queryErr, queryResults) => {
+    // return api.getArticles(query, (queryErr, queryResults) => {
+    return api.getFakeArticles(query, (queryErr, queryResults) => {
       let results = queryResults;
 
       const categories = _.map(categoriesData, (cat) => {

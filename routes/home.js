@@ -1,22 +1,11 @@
 const _ = require('lodash');
 
-const postgres = require('../lib/postgres');
+// const api = require('../lib/api');
 
 module.exports = (req, res, next) => {
   return res.redirect('/search');
 
-  // postgres.getFakeCategories((categoriesErr, categoriesData) => {
+  // api.getFakeCategories((categoriesErr, categoriesData) => {
   //   res.render('home', { categories: categoriesData });
   // });
-
-  // const categories = [
-  //   'physiology',
-  //   'evolutionary-biology',
-  //   'microbiology',
-  //   'systems-biology',
-  //   'cell-biology',
-  //   'epidemiology'
-  // ];
-
-  // res.render('home', { categories });
 }

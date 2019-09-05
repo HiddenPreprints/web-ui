@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 const hbs = require('hbs');
 const path = require('path');
 
-const config = require('./config');
+const config = require('./lib/config');
 
 const bodyJsonParser = bodyParser.json();
 const bodyFormParser = bodyParser.urlencoded({ extended: true });
