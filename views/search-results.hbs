@@ -1,25 +1,25 @@
 {{> header}}
 
-<h1>Equitable Preprints: {{category}}</h1>
-
 <form method="GET" action="" class="form-inline">
   <div class="form-group">
-    <label for="homeSearchInput">Search term</label>
-    <input id="homeSearchInput"  class="form-control" name="query" type="text" value="{{query}}" placeholder="e.g. brain" />
+    <!-- <label for="mainSearchInput">Search term</label> -->
+    <input id="mainSearchInput" name="query" type="text" value="{{query}}" placeholder="Search" />
   </div>
 
-  <button type="submit" class="btn btn-default">Search</button>
+  <button id="mainSearchSubmit" type="submit" class="btn btn-default">
+    <span class="fa fa-search"></span>
+  </button>
 
 </form>
 
-<h2>Results</h2>
-
+<!--
 <p>
   <strong>Found {{resultsTotal}} results
     {{#if query}} for term "{{query}}"{{/if}}
     {{#if category}} in {{category}}{{/if}}.
   </strong>
 </p>
+-->
 
 {{#each results}}
 <div class="result-item">

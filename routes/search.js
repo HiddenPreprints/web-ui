@@ -7,8 +7,20 @@ module.exports = (req, res, next) => {
   const query = _.get(req, 'query.query');
 
   return postgres.getFakeCategories((categoriesErr, categoriesData) => {
+
     return postgres.getFakeResults((queryErr, queryResults) => {
       let results = queryResults;
+
+      const categories = _.map(categoriesData, (cat) => {
+        cat.active = false; // no idea why the active property persists but whatever
+
+        if (cat.key === category) {
+          cat.active = true;
+        }
+
+        return cat;
+      });
+
 
       if (category) {
         console.log('applying category', category);
@@ -25,7 +37,7 @@ module.exports = (req, res, next) => {
         query: query,
         category: category,
         results: results,
-        categories: categoriesData
+        categories: categories
       };
 
       return res.render('search-results', context);

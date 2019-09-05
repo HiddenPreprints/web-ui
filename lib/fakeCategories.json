@@ -1,8 +1,8 @@
 [
-  "physiology",
-  "evolutionary-biology",
-  "microbiology",
-  "systems-biology",
-  "cell-biology",
-  "epidemiology"
+  {"key": "physiology", "name": "Physiology"},
+  {"key": "evolutionary-biology", "name": "Evolutionary biology"},
+  {"key": "microbiology", "name": "Microbiology"},
+  {"key": "systems-biology", "name": "Systems biology"},
+  {"key": "cell-biology", "name": "Cell biology"},
+  {"key": "epidemiology", "name": "Epidemiology"}
 ]
