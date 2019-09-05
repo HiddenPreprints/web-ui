@@ -9,7 +9,7 @@ module.exports = (req, res, next) => {
   return api.getCategories((categoriesErr, categoriesData) => {
   // return api.getFakeCategories((categoriesErr, categoriesData) => {
 
-    return api.getArticles(query, (queryErr, queryResults) => {
+    return api.getArticles({ query, category }, (queryErr, queryResults) => {
     // return api.getFakeArticles(query, (queryErr, queryResults) => {
       let results = queryResults;
 
@@ -35,10 +35,10 @@ module.exports = (req, res, next) => {
       // }
 
       const context = {
-        resultsTotal: results.total || 0,
+        resultsTotal: results && results.total ? results.total : 0,
         query: query,
         category: category,
-        results: results.articles,
+        results: results && results.articles ? results.articles : [],
         categories: categories
       };
 
