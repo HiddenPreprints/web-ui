@@ -1,6 +1,6 @@
 {{> header}}
 
-<form method="GET" action="" class="form-inline">
+<form method="GET" action="" class="form-inline" id="searchForm">
   <div class="form-group">
     <!-- <label for="mainSearchInput">Search term</label> -->
     <input id="mainSearchInput" name="query" type="text" value="{{query}}" placeholder="Search" />
@@ -23,25 +23,26 @@
 
 {{#each results}}
 <div class="result-item">
+  <span class="category">{{this.collection}}</span>
+
   <h3>
-    <span class="badge" title="Visibility Index">VI: 0.03</span>
     <a href="{{this.url}}" target="_blank">{{this.title}}</a>
   </h3>
-  <blockquote>{{this.abstract}}</blockquote>
+
+  <span class="badge pull-right" title="Visibility Index">VI: 0.03</span>
+
+  <!-- <blockquote>{{this.abstract}}</blockquote> -->
   <p>
     <strong>Authors:</strong>
     {{this.author_vector}}
   </p>
-  <p>
-    <a href="/{{this.collection}}/search">
-      <span class="label label-primary">{{this.collection}}</span>
-    </a>
+  <!-- <p>
     &nbsp; &nbsp; &nbsp; &nbsp;
     &nbsp; &nbsp; &nbsp; &nbsp;
     Published: {{this.posted}}
     &nbsp; &nbsp; &nbsp; &nbsp;
     DOI: <a href="https://doi.org/{{this.doi}}">https://doi.org/{{this.doi}}</a>
-  </p>
+  </p> -->
 </div>
 <hr />
 {{/each}}
