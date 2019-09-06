@@ -30,6 +30,17 @@ module.exports = (req, res, next) => {
         };
       }
 
+      results.articles = _.map(results.articles, (art) => {
+        let ui_class = 'label-danger';
+        if (art.shadow_index < 31) {
+          ui_class = 'label-warning'
+        }
+        if (art.shadow_index < 16) {
+          ui_class = 'label-success'
+        }
+        art.ui_class = ui_class;
+        return art;
+      });
       // if (category) {
       //   console.log('applying category', category);
       //   results = _.filter(results, (item) => { return item.collection === category; });
