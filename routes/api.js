@@ -6,6 +6,6 @@ module.exports = (req, res, next) => {
   // return res.redirect('/search');
 
   api.getCategories((categoriesErr, categoriesData) => {
-    res.render('home', { categories: categoriesData });
+    res.render('api', { categories: categoriesData });
   });
 }

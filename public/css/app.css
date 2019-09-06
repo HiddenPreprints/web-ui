@@ -7,7 +7,7 @@ body {padding-top: 30px;}
 
 .form-horizontal .control-label {text-align: left}
 
-nav#navLeft { position: fixed; left:0; top:0; width:200px; height:100%; overflow: scroll; background: white}
+nav#navLeft { position: fixed; left:0; top:0; width:200px; height:100%; overflow: scroll; background: white; border-right: 1px solid #ddd}
 
 nav#navLeft ul, nav#navLeft ul li {padding: 0; margin: 0}
 
@@ -45,3 +45,7 @@ div#mainBody { margin-left: 200px; max-width: 980px }
 }
 
 #logo {width: 140px; margin: 10px 30px;}
+
+#navLeft h3 {font-size: 0.8em; text-transform: uppercase; font-weight: 700; color: #555; padding-left: 5px}
+
+.homepageJumbotron {padding-top: 210px}

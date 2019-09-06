@@ -14,24 +14,4 @@
   <link href="/public/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
 
-
 <body>
-
-  <nav id="navLeft">
-    <img src="/public/shadow_idx.png" id="logo" />
-    <!-- <div class="container-fluid"> -->
-      <ul>
-        {{#each categories}}
-          <li>
-            <a href="/{{this.key}}/search" {{#if this.active}}class="active"{{/if}}>{{this.name}}</a>
-          </li>
-        {{/each}}
-        <!-- <li><a {{#unless category}}class="active"{{/unless}} href="/search">(all)</a></li> -->
-      </ul>
-      <br />
-      <br/>
-      <br/>
-    <!-- </div> -->
-  </nav>
-
-  <div class="container" id="mainBody">

@@ -29,6 +29,8 @@ function startApp() {
   app.use('/public', express.static('public'));
 
   app.get('/', require('./routes/home'));
+  app.get('/about', require('./routes/about'));
+  app.get('/api', require('./routes/api'));
   app.get('/search', require('./routes/search'));
   app.get('/:category/search', require('./routes/search'));
 
