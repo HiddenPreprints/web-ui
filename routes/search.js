@@ -2,6 +2,37 @@ const _ = require('lodash');
 
 const api = require('../lib/api');
 
+/**
+ * Determines the class to be used on the article.
+ * This controls the colour to be used in SI tag.
+ *
+ * @param {object} art Article as returned from the API
+ * @return {string} Class to be applied in the UI
+ */
+function determineUIClassForArticle(art) {
+  let uiClass = 'label-danger';
+  if (art.shadow_index < 31) {
+    uiClass = 'label-warning';
+  }
+  if (art.shadow_index < 16) {
+    uiClass = 'label-success';
+  }
+
+  return uiClass;
+}
+
+
+function mapCategoryToDisplayName(cat, allCategories) {
+  const catObject = _.find(allCategories, {key: cat});
+
+  if (catObject && catObject.name) {
+    return catObject.name;
+  }
+
+  return cat;
+}
+
+
 module.exports = (req, res, next) => {
   const category = _.get(req, 'params.category');
   const query = _.get(req, 'query.query');
@@ -23,22 +54,16 @@ module.exports = (req, res, next) => {
         return cat;
       });
 
-      if (!category) {
-        results = {
-          total: 0,
-          articles: []
-        };
-      }
+      // if (!category) {
+      //   results = {
+      //     total: 0,
+      //     articles: []
+      //   };
+      // }
 
       results.articles = _.map(results.articles, (art) => {
-        let ui_class = 'label-danger';
-        if (art.shadow_index < 31) {
-          ui_class = 'label-warning'
-        }
-        if (art.shadow_index < 16) {
-          ui_class = 'label-success'
-        }
-        art.ui_class = ui_class;
+        art.ui_class = determineUIClassForArticle(art);
+        art.category_display = mapCategoryToDisplayName(art.category, categoriesData);
         return art;
       });
       // if (category) {
