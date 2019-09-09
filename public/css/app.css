@@ -37,11 +37,15 @@ div#mainBody { margin-left: 200px; max-width: 980px }
 @media (max-width: 800px) {
   .container#mainBody { max-width: 600px }
 }
+
+/*
+Lowest breakpoint supported
+We will hide the nav by default and display show/hide button
+*/
 @media (max-width: 600px) {
-  .container#mainBody { max-width: 400px }
-}
-@media (max-width: 400px) {
-  div#navLeft {display: none}
+  .container#mainBody { max-width: 400px; margin-left:0 }
+  nav#navLeft {display: none}
+
 }
 
 #logo {width: 140px; margin: 10px 30px;}
