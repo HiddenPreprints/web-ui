@@ -1,0 +1,105 @@
+{
+  "total": 5000,
+  "articles": [
+    {
+      "id": 20392,
+      "url": "https://www.biorxiv.org/content/10.1101/147819v1",
+      "title": "Metabolomics and biochemical approaches link salicylic acid biosynthesis to cyanogenesis in peach plants",
+      "xx-abstract": "Despite the long-established importance of salicylic acid (SA) in plant stress responses and other biological processes, its biosynthetic pathway has not been fully characterized. The proposed SA synthesis originates from chorismate by two distinct pathways: isochorismate and penhylalanine (Phe) ammonia-lyase (PAL) pathways. Cyanogenesis is the process related to the release of hydrogen cyanide from endogenous cyanogenic glycosides (CNglcs), and it has been linked to plant plasticity improvement. To date, however, no relationship has been suggested between both pathways. In this work, by metabolomics and biochemical approaches (including [13C]-labelled compounds), we provide evidences showing that CNglcs turnover is involved, at least in part, in SA biosynthesis in peach plants under control and stress conditions. The main CNglcs in peach are prunasin and amygdalin, with mandelonitrile (MD), synthesized from Phe, controlling their turnover. In peach plants MD is at the hub of the suggested new SA biosynthetic pathway and CNglcs turnover, regulating both the amygdalin and SA biosynthesis. MD-treated peach plants displayed increased SA levels via benzoic acid (SA precursor). In addition, MD also provides partial protection against Plum pox virus infection in peach seedlings. Thus, we proposed a third pathway, alternative to the PAL pathway, for SA synthesis in peach plants.",
+      "doi": "10.1101/147819",
+      "category": "physiology",
+      "authors": "Author 1, Author 2, Author 3",
+      "shadow_index": "99.3"
+    },
+    {
+      "id": 50897,
+      "url": "https://www.biorxiv.org/content/10.1101/640235v2",
+      "title": "Three-dimensional morphological analysis of the dynamic digestive system in the green brittle star",
+      "xx-abstract": "Brittle stars (Echinodermata: Ophiuroidea) digest a great diversity of food in their stomach, which widely lies in the central disk. As for a possible digestive activity, the green brittle star Ophiarachna incrassata (Lamarck, 1816) is known to show a dynamic movement at the disk. This phenomenon would deeply involve the morphological structure of the stomach. However, past anatomical studies have shown the digestive system in two dimensions after wide incision of the body wall anchoring the stomach. This methodology restrains us from understanding how the stomach actually shapes inside a brittle star. We aim to visualize the morphology of brittle stars' digestive system in a non-destructive and three-dimensional way, with a comparison between a relaxed specimen and a specimen fixed at the very moment of the disk's movement. Employing X-ray micro-computed tomography (micro-CT) and introducing an instant freezing method with cryogenic ethanol, we found the stomach wholly transformed during the movement. We here brought transparency to the in vivo position of gut contents to hint the mechanism and digestive function of the movement. Our outcome spotlights a dynamic digestive process in echinoderms and a widely applicable method for probing into its relation with body structure.",
+      "doi": "10.1101/640235",
+      "category": "physiology",
+      "authors": "Author 1, Author 2, Author 3",
+      "shadow_index": "89.1"
+    },
+    {
+      "id": 24913,
+      "url": "https://www.biorxiv.org/content/10.1101/254136v1",
+      "title": "Ecological feedback on diffusion dynamics",
+      "xx-abstract": "Spatial patterns are ubiquitous across different scales of organization. Animal coat pattern, spatial organization of insect colonies, and vegetation in arid areas are prominent examples from such diverse ecologies. Typically, pattern formation has been described by reaction-diffusion equations, which considers individuals dispersing between sub-populations of a global pool. This framework applied to public goods game nicely showed the endurance of populations via diffusion and generation of spatial patterns. However, how the spatial characteristics, such as diffusion, are related to the eco-evolutionary process as well as the nature of the feedback from evolution to ecology and vice versa, has been so far neglected. We present a thorough analysis of the ecologically driven evolutionary dynamics in a spatially extended version of ecological public goods games. We show how these evolutionary dynamics feedback into shaping the ecology thus together determining the fate of the system.",
+      "doi": "10.1101/254136",
+      "category": "evolutionary-biology",
+      "authors": "Author 1, Author 2, Author 3",
+      "shadow_index": "80.75"
+    },
+    {
+      "id": 54672,
+      "url": "https://www.biorxiv.org/content/10.1101/693226v1",
+      "title": "The little caterpillar that could − Tobacco Hornworm (Manduca sexta) caterpillars as a novel host model for the study of fungal virulence and drug efficacy",
+      "xx-abstract": "Pathogenic yeast species can cause life−threatening infections in humans. The two leading yeast pathogens, Candida albicans and Cryptococcus neoformans , cause systemic infections in >1.4 million patients world−wide with mortality rates approaching 75%. It is thus imperative to study fungal virulence mechanisms, stress response pathways, and the efficacy of antifungal drugs. This is commonly done using mammalian models. To address ethical and practical concerns, invertebrate models, such as wax moth larvae, nematodes, or flies, have been introduced over the last two decades. To address short−comings in existing invertebrate host models, we developed fifth instar caterpillars of the Tobacco Hornworm moth Manduca sexta as a novel host model for the study of fungal virulence and drug efficacy. These caterpillars can be raised at standardised conditions, maintained at 37°C, can be injected with defined amounts of yeast cells, and are susceptible to the most threatening yeast pathogens, including C. albicans , C. neoformans , C. auris , and C. glabrata . Infected caterpillars can be rescued by treatment with commonly deployed antifungal drugs and importantly, fungal burden can be assessed daily throughout the course of infection in a single caterpillar′s faeces and hemolymph. Notably, these animals are large enough so that weight provides a reliable and reproducible measure of fungal virulence. This model combines a suite of parameters that recommend it for the study of fungal virulence.",
+      "doi": "10.1101/693226",
+      "category": "microbiology",
+      "authors": "Author 1, Author 2, Author 3",
+      "shadow_index": "72"
+    },
+    {
+      "id": 44236,
+      "url": "https://www.biorxiv.org/content/10.1101/553305v1",
+      "title": "Metabolic basis of brain-like electrical signalling in bacterial communities",
+      "xx-abstract": "Information processing in the mammalian brain relies on a careful regulation of the membrane potential dynamics of its constituent neurons, which propagates across the neuronal tissue via electrical signalling. We recently reported the existence of electrical signalling in a much simpler organism, the bacterium Bacillus subtilis. In dense bacterial communities known as biofilms, nutrient-deprived B. subtilis cells in the interior of the colony use electrical communication to transmit stress signals to the periphery, which interfere with the growth of peripheral cells and reduce nutrient consumption, thereby relieving stress from the interior. Here we explicitly address the interplay between metabolism and electrophysiology in bacterial biofilms, by introducing a spatially-extended mathematical model that combines the metabolic and electrical components of the phenomenon in a discretised reaction-diffusion scheme. The model is experimentally validated by environmental and genetic perturbations, and confirms that metabolic stress is transmitted through the bacterial population via a potassium wave. Interestingly, this behaviour is reminiscent of cortical spreading depression in the brain, characterised by a wave of electrical activity mediated by potassium diffusion that has been linked to various neurological disorders, calling for future studies on the evolutionary link between the two phenomena.",
+      "doi": "10.1101/553305",
+      "category": "systems-biology",
+      "authors": "Author 1, Author 2, Author 3",
+      "shadow_index": "55"
+    },
+    {
+      "id": 23149,
+      "url": "https://www.biorxiv.org/content/10.1101/058883v2",
+      "title": "Zika Virus in the Human Placenta and Developing Brain: Cell Tropism and Drug Inhibition",
+      "xx-abstract": "The rapid spread of Zika virus (ZIKV) and its association with abnormal brain development constitute a global health emergency. Congenital ZIKV infection produces a range of mild to severe pathologies, including placental damage and microcephaly. However, the placenta's role in viral transmission and the mechanisms of microcephaly have not been addressed in primary human tissues. Moreover, there is an urgent need for drugs that can prevent developmental defects following infection. Here, we identify the placental and brain cell populations most susceptible to ZIKV infection, provide evidence for a mechanism of viral entry, and show that a commonly used antibiotic protects cultured brain cells by inhibiting viral proliferation. In the early gestation placenta, the virus readily infected trophoblast subpopulations that are in direct contact with maternal blood and uterine cells, suggesting routes of ZIKV transmission to the embryo and fetus. In the brain, ZIKV preferentially infected neural stem cells, astrocytes, and microglia, whereas neurons were less susceptible to infection. These findings suggest mechanisms for microcephaly and other pathologic features of infants with congenital ZIKV infection that are not explained by neural stem cell infection alone, such as calcifications in the cortical plate and brain abnormalities caused by third trimester infection. Blocking a putative viral entry receptor, AXL, which is highly enriched in the infected placenta and brain cell types, reduced ZIKV infection of astrocytes in vitro. In a glial cell line, the macrolide antibiotic, azithromycin, inhibited viral proliferation and viral-induced cytopathic effects at clinically relevant concentrations. Our characterization of infection in primary human tissues clarifies the pathogenesis of congenital ZIKV infection and provides critical context for interpreting results from model systems. Further work on azithromycin and related compounds may yield additional therapeutic strategies to safely alleviate or prevent the most severe consequences of the epidemic.",
+      "doi": "10.1101/058883",
+      "category": "cell-biology",
+      "authors": "Author 1, Author 2, Author 3",
+      "shadow_index": "45.2"
+    },
+    {
+      "id": 47688,
+      "url": "https://www.biorxiv.org/content/10.1101/599142v1",
+      "title": "Renewal theory provides a universal quantitative framework to characterise the continuous regeneration of rotational events in cardiac fibrillation",
+      "xx-abstract": "Background: Cardiac fibrillation is thought to be maintained by rotational activity, with pivoting regions called phase singularities (PSs). Despite a century of research, no clear quantitative framework exists to model the fundamental processes responsible for the continuous formation and destruction of rotors in fibrillation. Objective: We conducted a multi-modality, multi-species study of AF/VF under the hypothesis that PS formation/destruction in fibrillation can be modelled as self-regenerating renewal processes, producing exponential distributions of inter-event times governed by constant rate-parameters defined by the prevailing properties of the system. Methods: PS formation/destruction was studied and cross-validated in 5 models, using basket recordings and optical mapping from: i) human persistent AF (n = 20), ii) tachypaced sheep AF (n = 5), iii) rat AF (n = 4), iv) rat VF (n = 11) and v) computer simulated AF (SIM). Hilbert phase maps were constructed. PS lifetime data were fitted by exponential probability distribution functions (PDFs) computed using maximum entropy theory, and the rate parameter (λ) determined. A systematic review was conducted to cross-validate with source data from literature. Results: PS destruction/formation distributions showed good fits to an exponential in all systems (R2 ≥ 0.90). In humans, λ = 4.6%/ms (95%CI,4.3,4.9)), sheep 4.4%/ms (95%CI,4.1,4.7)), rat AF 38%/ms (95%CI,22,55), rat VF 46%/ms (95%CI,31.2,60.2) and SIM 5.4%/ms (95%CI,4.1,6.7). All PS distributions identified through systematic review were exponential with λ comparable to experimental data. Conclusion: These results provide a universal quantitative framework to explain rotor formation and destruction in AF/VF, and a platform for therapeutic advances in cardiac fibrillation.",
+      "doi": "10.1101/599142",
+      "category": "physiology",
+      "authors": "Author 1, Author 2, Author 3",
+      "shadow_index": "30"
+    },
+    {
+      "id": 25183,
+      "url": "https://www.biorxiv.org/content/10.1101/204826v1",
+      "title": "Onset of natural selection in auto-catalytic heteropolymers",
+      "xx-abstract": "Reduction of information entropy along with ever-increasing complexity are among the key signatures of living matter. Understanding the onset of such behavior in early prebiotic world is essential for solving the problem of origins of life. To elucidate this transition, we study a theoretical model of information-storing heteropolymers capable of template-assisted ligation and subjected to cyclic non-equilibrium driving forces. We discover that this simple physical system undergoes a spontaneous reduction of the information entropy due to the competition of chains for constituent monomers. This natural-selection-like process ultimately results in the survival of a limited subset of polymer sequences. Importantly, the number of surviving sequences remains exponentially large, thus opening up the possibility of further increase in complexity due to Darwinian evolution. We also propose potential experimental implementations of our model using either biopolymers or artificial nano-structures.",
+      "doi": "10.1101/204826",
+      "category": "evolutionary-biology",
+      "authors": "Author 1, Author 2, Author 3",
+      "shadow_index": "17"
+    },
+    {
+      "id": 58362,
+      "url": "https://www.biorxiv.org/content/10.1101/735225v1",
+      "title": "Translational Regulation Promotes Oxidative Stress Resistance in the Human Fungal Pathogen Cryptococcus neoformans",
+      "xx-abstract": "Cryptococcus neoformans is one of the few environmental fungi that can survive within a mammalian host and cause disease. Although many of the factors responsible for establishing virulence have been recognized, how they are expressed in response to certain host derived cellular stresses is rarely addressed. Here we characterize the temporal translational response of C. neoformans to oxidative stress. We find that translation is largely inhibited through the phosphorylation of the critical initiation factor eIF2α by a sole kinase. Preventing eIF2α mediated translational suppression resulted in growth sensitivity to hydrogen peroxide (H2O2). Our work suggests that translational repression in response to H2O2 partly facilitates oxidative stress adaptation by accelerating the decay of abundant non-stress related transcripts while facilitating the proper expression of critical oxidative stress response factors. Carbon starvation, which seems to induce translational suppression that is independent eIF2α, partly restored transcript decay and the expression of the critical oxidative stress response transcript Thioredoxin Reductase 1 (TRR1). Our results illustrate translational suppression as a key determinant of select mRNA decay, gene expression, and subsequent survival in response to oxidative stress.",
+      "doi": "10.1101/735225",
+      "category": "microbiology",
+      "authors": "Author 1, Author 2, Author 3",
+      "shadow_index": "10.3"
+    },
+    {
+      "id": 34502,
+      "url": "https://www.biorxiv.org/content/10.1101/440867v1",
+      "title": "Using digital epidemiology methods to monitor influenza-like illness in the Netherlands in real-time: the 2017-2018 season",
+      "xx-abstract": "Introduction: Despite the early development of Google Flu Trends in 2009, digital epidemiology methods have not been adopted widely, with most research focusing on the USA. In this article we demonstrate the prediction of real-time trends in influenza-like illness (ILI) in the Netherlands using search engine query data. Methods: We used flu-related search query data from Google Trends in combination with traditional surveillance data from 40 general sentinel practices to build our predictive models. We introduced an artificial 4-week delay in the use of GP data in the models, in order to test the predictive performance of the search engine data. Simulating the weekly use of a prediction model across the 2017/2018 flu season we used lasso regression to fit 52 prediction models (one for each week) for weekly ILI incidence. We used rolling forecast cross-validation for lambda optimization in each model, minimizing the maximum absolute error. Results: The models accurately predicted the number of ILI cases during the 2017/18 ILI epidemic in real time with a mean absolute error of 1.40 (per 10,000 population) and a maximum absolute error of 6.36. The model would also have identified the onset, peak, and end of the epidemic with reasonable accuracy. The number of predictors that were retained in the prediction models was small, ranging from 3 to 5, with a single keyword (Griep = Flu) having by far the most weight in all models. Discussion: This study demonstrates the feasibility of accurate real-time ILI incidence predictions in the Netherlands using internet search query data. Digital ILI monitoring strategies may be useful in countries with poor surveillance systems, or for monitoring emergent diseases, including influenza pandemics. We hope that this transparent and accessible case study inspires and supports further developments in field of digital epidemiology in Europe and beyond.",
+      "doi": "10.1101/440867",
+      "category": "epidemiology",
+      "authors": "Author 1, Author 2, Author 3",
+      "shadow_index": "3.1"
+    }
+  ]
+}
