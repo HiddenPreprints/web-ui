@@ -1,14 +1,10 @@
 require('dotenv').config();
 
 const express = require('express');
-const bodyParser = require('body-parser');
 const hbs = require('hbs');
 const path = require('path');
 
 const config = require('./lib/config');
-
-const bodyJsonParser = bodyParser.json();
-const bodyFormParser = bodyParser.urlencoded({ extended: true });
 
 function startApp() {
   const app = express();
@@ -27,16 +23,16 @@ function startApp() {
 
   app.use('/public', express.static('public'));
 
-  app.use('/', require('./routes/middleware'));
+  app.use('/:category?', require('./routes/middleware'));
+
   app.get('/', (req, res) => res.render('home', res.locals));
   app.get('/about', (req, res) => res.render('about', res.locals));
   app.get('/api', (req, res) => res.render('api', res.locals));
 
-  app.get('/search', require('./routes/search'));
-  app.get('/:category/search', require('./routes/search'));
+  app.get('/:category?/search', require('./routes/search'));
 
   app.listen(config.appPort, () => {
-    console.log(`Equitable Preprints UI listening on port ${config.appPort}`);
+    console.log(`Hidden Preprints UI listening on port ${config.appPort}`);
   });
 
   return app;
