@@ -1,29 +1,26 @@
 {{> header}}
 
-{{> navLeft}}
+<div class="container-fluid" id="mainBody">
 
-<div class="container" id="mainBody">
-
-<form method="GET" action="" class="form-inline" id="searchForm">
-  <div class="form-group">
+<form method="GET" action="" class="form-inline" id="mainSearchForm">
+  <!-- <div class="form-group"> -->
     <!-- <label for="mainSearchInput">Search term</label> -->
     <input id="mainSearchInput" name="query" type="text" value="{{query}}" placeholder="Search" />
-  </div>
 
-  <button id="mainSearchSubmit" type="submit" class="btn btn-default">
-    <span class="fa fa-search"></span>
-  </button>
+    <button id="mainSearchSubmit" type="submit" class="btn btn-default">
+      <span class="fa fa-search"></span>
+    </button>
+  <!-- </div> -->
+
 </form>
 
-{{#if category}}
 <p>
-  <strong>Showing {{resultsDisplayed}} low-visibility results out of {{resultsTotal}} total</strong>
+  <strong>Showing {{resultsDisplayed}} low visibility results out of {{resultsTotal}} total</strong>
     {{#if query}} for term "{{query}}"{{/if}}
-     in <i>{{category}}</i>.
+    {{#if category}} in <i>{{category.name}}</i>{{else}} across categories{{/if}}.
 
 </p>
 <br />
-{{/if}}
 
 {{#each results}}
 <div class="result-item">
@@ -53,5 +50,7 @@
 {{/each}}
 
 </div>
+
+{{> navLeft}}
 
 {{> footer}}
