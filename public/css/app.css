@@ -25,7 +25,8 @@ nav#navLeft li a.active { background: #eee; color: #555}
 
 .result-item {padding: 15px 0}
 .result-item .category {text-transform: uppercase; color: #888; font-weight: bold}
-
+.result-item h3, .result-item .shadowIndexIndicator {font-size: 22px; margin-top: 10px; margin-bottom: 10px; display: block}
+.result-item .shadowIndexIndicator {margin-top: 30px; width: 70%}
 
 /* Our lowest breakpoint - nav at the bottom */
 @media (max-width: 600px) {
