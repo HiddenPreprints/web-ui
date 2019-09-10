@@ -1,5 +1,3 @@
-'use strict';
-
 require('dotenv').config();
 
 const express = require('express');
@@ -23,14 +21,17 @@ function startApp() {
     return JSON.stringify(input, null, 2);
   });
 
+  // eslint-disable-next-line no-underscore-dangle
   app.engine('hbs', hbs.__express);
   app.set('view engine', 'hbs');
 
   app.use('/public', express.static('public'));
 
-  app.get('/', require('./routes/home'));
-  app.get('/about', require('./routes/about'));
-  app.get('/api', require('./routes/api'));
+  app.use('/', require('./routes/middleware'));
+  app.get('/', (req, res) => res.render('home', res.locals));
+  app.get('/about', (req, res) => res.render('about', res.locals));
+  app.get('/api', (req, res) => res.render('api', res.locals));
+
   app.get('/search', require('./routes/search'));
   app.get('/:category/search', require('./routes/search'));
 

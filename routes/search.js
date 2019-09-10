@@ -23,7 +23,7 @@ function determineUIClassForArticle(art) {
 
 
 function mapCategoryToDisplayName(cat, allCategories) {
-  const catObject = _.find(allCategories, {key: cat});
+  const catObject = _.find(allCategories, { key: cat });
 
   if (catObject && catObject.name) {
     return catObject.name;
@@ -79,14 +79,13 @@ module.exports = (req, res, next) => {
       const context = {
         resultsTotal: results && results.total ? results.total : 0,
         resultsDisplayed: results && results.articles ? results.articles.length : 0,
-        query: query,
-        category: category,
+        query,
+        category,
         results: results && results.articles ? results.articles : [],
-        categories: categories
+        categories,
       };
 
       return res.render('search-results', context);
     });
   });
-
 };
