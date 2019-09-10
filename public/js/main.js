@@ -1,7 +1,11 @@
 function autofocusSearch() {
-  $('input#filterSearch').focus();
+  $('input#mainSearchInput').focus();
+}
+function enableTooltips() {
+  $('[data-toggle="tooltip"]').tooltip();
 }
 
 $(document).ready(() => {
-  autofocusSearch();
+  // autofocusSearch();
+  enableTooltips();
 });

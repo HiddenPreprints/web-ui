@@ -26,7 +26,10 @@ nav#navLeft li a.active { background: #eee; color: #555}
 .result-item {padding: 15px 0}
 .result-item .category {text-transform: uppercase; color: #888; font-weight: bold}
 .result-item h3, .result-item .shadowIndexIndicator {font-size: 22px; margin-top: 10px; margin-bottom: 10px; display: block}
-.result-item .shadowIndexIndicator {margin-top: 30px; width: 70%}
+.result-item .shadowIndexIndicator {margin-top: 30px; width: 100px; height: 70px; padding: 30px 5px 0;}
+.result-item .shadowIndexIndicator .legend {
+background: #7676767a; font-size: 11px; font-weight: 400; display: block;
+border-radius: 6px 6px 0 0; padding: 5px; margin: -52px -5px 0}
 
 /* Our lowest breakpoint - nav at the bottom */
 @media (max-width: 600px) {
