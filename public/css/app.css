@@ -28,7 +28,7 @@ nav#navLeft li a.active { background: #eee; color: #555}
 .result-item h3, .result-item .shadowIndexIndicator {font-size: 22px; margin-top: 10px; margin-bottom: 10px; display: block}
 .result-item .shadowIndexIndicator {margin-top: 30px; width: 100px; height: 70px; padding: 30px 5px 0;}
 .result-item .shadowIndexIndicator .legend {
-background: #7676767a; font-size: 11px; font-weight: 400; display: block;
+background: rgba(118, 118, 118, 0.6); font-size: 11px; font-weight: 400; display: block;
 border-radius: 6px 6px 0 0; padding: 5px; margin: -52px -5px 0}
 
 /* Our lowest breakpoint - nav at the bottom */
@@ -36,3 +36,7 @@ border-radius: 6px 6px 0 0; padding: 5px; margin: -52px -5px 0}
   .container-fluid#mainBody { width: 100%; margin-left:0 }
   nav#navLeft {position: relative; left: 0; right: 0; width: 100%; border-right: 0; height: auto }
 }
+
+
+.fa-external-link {font-size: 14px !important}
+.fa-twitter {color: #1ca1f2 !important; font-size: 24px !important}

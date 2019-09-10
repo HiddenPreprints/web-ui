@@ -27,13 +27,13 @@
   <div class="col-xs-10">
     <p class="category">{{this.category_display}}</p>
 
-    <h3><a href="{{this.url}}" target="_blank">{{this.title}}</a></h3>
+    <h3><a href="{{this.url}}" target="_blank">{{this.title}} <span class="fa fa-external-link"></span></a></h3>
 
     <p>{{this.authors}}</p>
 
     <!-- <blockquote>{{this.abstract}}</blockquote> -->
 
-    <p>DOI: <a href="https://doi.org/{{this.doi}}">https://doi.org/{{this.doi}}</a></p>
+    <p>DOI: <a href="https://doi.org/{{this.doi}}" target="_blank">https://doi.org/{{this.doi}} <span class="fa fa-external-link"></span></a></p>
   </div>
 
   <div class="col-xs-2">
@@ -44,9 +44,14 @@
       <span class="legend">
         Shadow Index
         <span class="fa fa-question-circle" data-toggle="tooltip" title="High Shadow Index indicates low visibility of a preprint in its category."></span>
-
       </span>
     </span>
+
+    <div class="clearfix"></div>
+
+    <a class="pull-right" target="_blank" href="http://twitter.com/share?text=I%20just%20discovered%20this%20hidden%20gem%20%23HiddenPreprints%20&url={{this.url}}" data-toggle="tooltip" title="Tweet a link to this preprint">
+      <span class="fa fa-2x fa-twitter"></span>
+    </a>
   </div>
 
 </div>
