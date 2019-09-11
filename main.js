@@ -17,6 +17,18 @@ function startApp() {
     return JSON.stringify(input, null, 2);
   });
 
+  hbs.registerHelper('markHits', (text, needle) => {
+    if (typeof needle !== 'string' || !needle.trim().length) {
+      return text;
+    }
+
+    const pattern = new RegExp(needle, 'gi');
+    const replacement = (hit) => `<span class="hit">${hit}</span>`;
+    const newText = text.replace(pattern, replacement);
+
+    return newText;
+  });
+
   hbs.registerHelper('roundNumber', (input, places) => {
     // eslint-disable-next-line no-restricted-globals
     const decPlaces = !isNaN(Number(places)) ? Number(places) : 0;
