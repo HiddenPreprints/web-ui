@@ -24,12 +24,14 @@ nav#navLeft li a.active { background: #eee; color: #555}
 #mainSearchSubmit:hover, #mainSearchSubmit:focus {background: #f8f8f8;}
 
 .result-item {padding: 15px 0}
-.result-item .category {text-transform: uppercase; color: #888; font-weight: bold}
-.result-item h3, .result-item .shadowIndexIndicator {font-size: 22px; margin-top: 10px; margin-bottom: 10px; display: block}
-.result-item .shadowIndexIndicator {margin-top: 30px; width: 100px; height: 70px; padding: 30px 5px 0;}
-.result-item .shadowIndexIndicator .legend {
-background: rgba(118, 118, 118, 0.6); font-size: 11px; font-weight: 400; display: block;
-border-radius: 6px 6px 0 0; padding: 5px; margin: -52px -5px 0}
+.result-item .category {text-transform: uppercase; color: #707070; font-weight: bold}
+.result-item h2, .result-item .shadowIndexIndicator {font-size: 22px; margin-top: 10px; margin-bottom: 10px; display: block}
+.result-item .shadowIndexIndicator {margin-top: 30px; width: 100px; height: 70px; padding: 30px 5px 0; border: 1px solid #999; text-shadow: 0 1px 0 #777;}
+.result-item .shadowIndexIndicator .legend { background: rgba(118, 118, 118, 0.6); display: block;
+font-size: 11px; font-weight: 400; border-radius: 4px 4px 0 0; padding: 5px; margin: -52px -5px 0}
+.result-item .shadowIndexIndicator .legend a {color: white}
+
+.plainBodyText {font-size: 1em !important; margin: 0}
 
 /* Our lowest breakpoint - nav at the bottom */
 @media (max-width: 600px) {
