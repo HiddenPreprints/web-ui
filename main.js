@@ -17,6 +17,14 @@ function startApp() {
     return JSON.stringify(input, null, 2);
   });
 
+  hbs.registerHelper('roundNumber', (input, places) => {
+    // eslint-disable-next-line no-restricted-globals
+    const decPlaces = !isNaN(Number(places)) ? Number(places) : 0;
+    const decFactor = 10 ** decPlaces;
+
+    return Math.round(input * decFactor) / decFactor;
+  });
+
   // eslint-disable-next-line no-underscore-dangle
   app.engine('hbs', hbs.__express);
   app.set('view engine', 'hbs');
