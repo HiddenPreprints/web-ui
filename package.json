@@ -1,14 +1,14 @@
 {
-  "name": "ep-ui",
+  "name": "@hiddenpreprints/web-ui",
   "version": "1.0.0",
-  "description": "Equitable Preprints UI",
-  "homepage": "https://gitlab.com/equitable-preprints",
+  "description": "Hidden Preprints UI",
+  "homepage": "https://hiddenpreprints.org",
   "bugs": {
-    "url": "https://gitlab.com/equitable-preprints/ep-ui/issues"
+    "url": "https://github.com/HiddenPreprints/web-ui/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/equitable-preprints/ep-ui.git"
+    "url": "https://github.com/HiddenPreprints/web-ui.git"
   },
   "main": "main.js",
   "scripts": {
